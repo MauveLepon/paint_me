@@ -9,4 +9,13 @@ public class Controller {
         view = v; 
         model = m;
     }
+
+    public void paintPixel() {
+        view.paintPixel();
+    }
+
+    public void updateCoordinates(int x, int y) {
+        model.updateX(x);
+        model.updateY(y);
+    }
 }

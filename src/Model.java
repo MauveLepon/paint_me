@@ -5,6 +5,8 @@ import java.awt.*;
 
 public class Model {
     private Color mainColor;
+    private int x = 0;
+    private int y = 0;
 
     public Model() {
         mainColor = Color.BLACK;
@@ -20,5 +22,21 @@ public class Model {
 
     public void setMainColor(Color color) {
         mainColor = color;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void updateX(int x) {
+        this.x = x;
+    }
+
+    public void updateY(int y) {
+        this.y = y;
     }
 }
